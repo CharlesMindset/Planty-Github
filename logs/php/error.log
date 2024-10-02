@@ -18,3 +18,16 @@
 [27-Sep-2024 08:11:36 UTC] PHP Warning:  Undefined array key "options" in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-content\plugins\elementor-pro\modules\theme-builder\widgets\site-logo.php on line 192
 [27-Sep-2024 09:11:25 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\class-wp-customize-widgets.php on line 905
 [27-Sep-2024 10:20:44 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-content\themes\hello-elementor-child\functions.php on line 33
+[02-Oct-2024 13:18:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_schema_type() in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-content\themes\hello-elementor-child\header.php:2
+Stack trace:
+#0 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\template.php(745): load_template('C:\\Users\\xavie\\...', true, Array)
+#2 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-content\themes\hello-elementor\index.php(15): get_header()
+#4 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\xavie\\...')
+#5 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-blog-header.php(19): require_once('C:\\Users\\xavie\\...')
+#6 C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\index.php(17): require('C:\\Users\\xavie\\...')
+#7 {main}
+  thrown in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-content\themes\hello-elementor-child\header.php on line 2
+[02-Oct-2024 13:36:10 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[02-Oct-2024 13:53:49 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\xavie\Local Sites\planty\Planty-Github\app\public\wp-includes\class-wp-customize-widgets.php on line 905

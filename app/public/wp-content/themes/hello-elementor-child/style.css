@@ -1,13 +1,336 @@
 /*
-Theme Name: Hello Elementor Child
-Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
-Template: hello-elementor
-Author: Elementor Team
-Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
-Description: Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
-Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
-Version: 3.1.1.1727422662
-Updated: 2024-09-27 07:37:42
-
+Theme Name: Planty-github
+Description: Theme enfant de Hello Elementor
+Author: Charles Fin
+Author URI: https://github.com/CharlesMindset/Planty-Github
+Template: Hello Elementor
+Version: 0.1.0
 */
 
+body{
+    font-family: 'Syne', sans-serif !important;
+}
+
+/* cache fleche champ number */
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+  }
+
+/* Masquage infos formulaire */
+.nf-before-form-content, .nf-form-title{
+    display: none !important;
+}
+
+/* Style formulaires */
+
+#nf-form-2-cont nf-fields-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+	margin-left: 30px;
+}
+
+#nf-field-21{
+	margin-left: 85%;
+}
+
+#nf-field-4{
+	background-color: #E0B9B4;
+	border-radius: 5px;
+}
+
+.nf-field-element input, .nf-field-element textarea {
+	border: none !important;
+	border-radius: 7px !important;
+}
+
+.nf-field-label{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.nf-field-element input[type=submit]{
+	width: 198px !important;
+	height: 55px !important;
+}
+
+.submit-wrap{
+	text-align: center
+}
+
+.nf-form-content{
+	padding: 0 !important;
+}
+
+.nf-field-element p{
+	color: #FFFFFF;
+    font-family: "Syne", syne;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+label{
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: 400 !important;
+}
+
+#nf-field-21, #nf-field-4, #nf-field-39{
+	background-color: #E0B9B4;
+	font-size: 15px;
+	transition: 0.2s;
+}
+
+#nf-field-21:hover, #nf-field-4:hover, #nf-field-39:hover{
+	background-color: #C02E44;
+	color: #ffffff;
+	transition: 0.2s;
+	font-weight: 700;
+}
+
+#nf-label-field-1,#nf-label-field-2, #nf-label-field-3{
+	color: #000000 !important;
+}
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-child(odd) {
+	border-right: 1px solid #ffffff;
+	padding-right: 50px;
+}
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-child(even) {
+	padding-right: 50px;
+}
+
+#nf-form-2-cont nf-fields-wrap nf-field:nth-last-child(1) {
+	border-right-width: 0 !important;
+	margin-top: 30px;
+}
+
+#nf-field-24-wrap::before, #nf-field-25-wrap::before, #nf-field-27-wrap::before, #nf-field-29-wrap::before{
+	content: '+';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px 10px;
+	background-color: #DC9F96;
+    border-top-right-radius: 7px;
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
+	z-index: 999;
+}
+
+#nf-field-24-wrap::after, #nf-field-25-wrap::after, #nf-field-27-wrap::after, #nf-field-29-wrap::after{
+	content: '-';
+    position: absolute;
+    right: 0px;
+    top: 23px;
+    padding: 5px 10px;
+	background-color: #DC9F96;
+    border-bottom-right-radius: 7px;
+	border-top: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+#nf-field-24-wrap{
+	position: relative;
+}
+
+
+
+/* Style footer */
+
+footer {
+	width: 100% !important;
+	text-align: center;
+	padding: 20px;
+	height: 60px;
+    background-color: #ffffff;
+}
+
+#mentions-legales a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+    transition-duration: 0.2s;
+}
+
+#mentions-legales a:hover{
+	font-weight: 700;
+    transition-duration: 0.2s;
+}
+
+
+/* Style header */
+
+header{
+	background-color: #ffffff;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	align-items: center;
+}
+
+#menu a{
+    color: black;
+    text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+    min-width: 50px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+#menu a:hover{
+    font-weight: 700;
+    transition-duration: 0.2s;
+}
+
+.bouton-rose{
+	background-color: #DC9F96;
+	color: #ffffff !important;
+	font-weight: 700;
+	padding: 30px;
+    transition-duration: 0.2s;
+}
+
+.bouton-rose:hover{
+	background-color: #C02E44;
+    transition-duration: 0.2s;
+}
+
+.menu, #menu{
+	display: flex;
+}
+
+.menu ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    list-style-type: none;
+}
+
+	/* CSS Page commander */
+
+	.elementor-element-b22795a .elementor-button, .elementor-element-39939fe .elementor-button, .elementor-element-f51c2a2 .elementor-button, .elementor-element-e0d345b .elementor-button{
+		width: 100px !important;
+    	height: 50px !important;
+	}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+
+
+	/* Accueil */
+
+	.elementor-8 .elementor-element.elementor-element-6a35649 .elementor-heading-title span  {
+		font-size: 20px !important;
+	}
+	
+	
+	.elementor-8 .elementor-element.elementor-element-6a35649 > .elementor-widget-container{
+		margin: 0 !important;
+	}
+	
+	.elementor-8 .elementor-element.elementor-element-844d711 > .elementor-widget-container {
+		margin: -30px 0px -40px 0px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-20f98ec .elementor-heading-title {
+		color: var(--e-global-color-primary );
+		font-family: "Syne", syne;
+		font-size: 24px;
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 36px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-9d809df .elementor-heading-title {
+		color: var(--e-global-color-secondary );
+		font-family: "Syne", syne;
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 36px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-b16516d {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 20px 0px 20px 0px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-33556b7 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		
+	.elementor-8 .elementor-element.elementor-element-c587853 {
+		padding: 0px 50px 0px 50px;
+	}
+		
+	.elementor-element-983cc97, .elementor-element-d4da88f, .elementor-element-38848f7, .elementor-element-dd08b50, .elementor-element-bffbce2, .elementor-element-4be5542, .elementor-element-4f08f20{
+		text-align: center !important;
+	}
+		
+	/* CSS Page Nous rencontrer */
+	.elementor-10 .elementor-element.elementor-element-6e2ce89 .elementor-heading-title {
+		font-size: 24px !important;
+	}
+		
+	.elementor-10 .elementor-element.elementor-element-afe36af > .elementor-widget-container {
+		padding: 0px;
+	}
+		
+	.elementor-10 .elementor-element.elementor-element-7a8e546 {
+		padding: 0% 10% 0% 10%;
+	}
+
+	/* Header */
+
+	header {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-left: 0px;
+	}
+	
+	#branding{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	#menu a{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.menu-main-menu-container, #menu{
+		display: block;
+	}
+	
+	.menu-main-menu-container ul{
+		display: block;
+	}
+
+	/* Commander */
+	.elementor-element-226a96c h2{
+		font-size: 22px !important;
+	}
+
+	#nf-field-24-wrap::before, #nf-field-25-wrap::before, #nf-field-27-wrap::before, #nf-field-29-wrap::before{
+		top: 10px;
+	}
+	
+	#nf-field-24-wrap::after, #nf-field-25-wrap::after, #nf-field-27-wrap::after, #nf-field-29-wrap::after{
+		top: 33px;
+	}
+		
+}

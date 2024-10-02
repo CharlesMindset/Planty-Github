@@ -1,0 +1,6 @@
+Header :
+Je n'arrive pas à mettre le logo en avant.
+    → Le fait de copier coller le header.php de Hello-Elementor et de le placer dans mon thème enfant n'était
+    pas suffisant ? 
+    J'ai repris le code d'un autre élève disponible sur GitHub pour le header et j'ai demandé à chat GPT de
+    m'expliquer mais pour le logo je comprends pas pourquoi ça marche pas.
